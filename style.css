@@ -1,8 +1,36 @@
 
-* {
+body {
 
     background-image: url(/images/background3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.navbar {
+
+    float: left;
+    padding: 5px;
+
+
+}
+
+.navbar:hover {
+
+    background-color: rgb(196, 152, 152);
+
+}
+
+#nbar {
+
+    height: 30px;
+    background-color: rgb(103, 136, 123);
+
+}
+
+#navBarL {
+
+    height: 30px;
+    width: 70%;
+    float: left;
 }
