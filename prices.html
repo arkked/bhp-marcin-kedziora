@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma Handlowo Usługowa BHPPOŻ - Marcin Kędziora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="main.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+</head>
+<body>
+  
+<section class="sub-header">
+    <nav>
+
+        <a href="index.html"><img src="images/logo4.svg"> </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a href="index.html">START</a></li>
+                <li><a href="index.html#about-id">O MNIE</a></li>
+                <li><a href="index.html#services-id">USŁUGI</a></li>
+                <li><a href="prices.html">CENNIK</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+            </ul>
+            
+        </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   
+</section>
+
+
+<!------Footer------->
+
+
+<section class="footer">
+
+    <p>Made by Arkadiusz Kędziora</p>
+
+</section>
+
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+
+    navLinks.style.right = "0";
+
+}
+
+function hideMenu(){
+
+    navLinks.style.right = "-200px";
+
+}
+
+</script>
+
+</body>
+</html>
