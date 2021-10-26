@@ -1,2 +1,2 @@
 # bhp-marcin-kedziora
-My first website created for my father's company.
+My first webapp created for my father's company.
