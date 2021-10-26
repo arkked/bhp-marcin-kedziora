@@ -55,15 +55,15 @@
             <div>
                 <i class="fa fa-home"></i>
                 <span>
-                    <h5> Ulica Nr </h5>
-                    <p>00-000 Miasto, Państwo</p>
+                    <h5> Leśna 19 </h5>
+                    <p>42-286 Koszęcin, Polska</p>
                 </span>
             </div>
 
             <div>
                 <i class="fa fa-phone"></i>
                 <span>
-                    <h5> +48 123 456 789 </h5>
+                    <h5> +48 608 405 809 </h5>
                     <p>Od Poniedziałku do Piątku, 9:00 - 17:00 </p>
                 </span>
             </div>
@@ -71,7 +71,7 @@
             <div>
                 <i class="far fa-envelope"></i>
                 <span>
-                    <h5> marcin@kedziora.com </h5>
+                    <h5> email@sluzbowy.com </h5>
                     <p> Napisz e-mail</p>
                 </span>
 
@@ -80,12 +80,12 @@
 
             <div class="contact-col">
 
-                <form action="mailto:arek.kedziora7@gmail.com" method="GET">
+                <form action="form-handler.php" method="post">
 
-                    <input type="text" placeholder="Podaj imię" required>
-                    <input type="email" placeholder="Podaj adres email" required>
-                    <input type="text" placeholder="Temat" required>
-                    <textarea rows="8" placeholder="Wiadomość"></textarea>
+                    <input type="text" name="name" placeholder="Podaj imię" required>
+                    <input type="email" name="email" placeholder="Podaj adres email" required>
+                    <input type="text" name="subject" placeholder="Temat" required>
+                    <textarea rows="8" name="message" placeholder="Wiadomość"></textarea>
                     <button type="submit" class="form-btn">Wyślij</button>
 
                 </form>
