@@ -282,6 +282,7 @@ h3 {
 
     width: 100%;
     display: block;
+    
 
 }
 
@@ -304,7 +305,8 @@ h3 {
     flex-basis: 70%;
     justify-content: space-between;
     margin-bottom: 5%;
-    margin-left: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     padding: 20px 12px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -478,3 +480,25 @@ h3 {
     transition: 1s;
 
 }
+
+/* --------prices----------- */
+
+.prices-text {
+    
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+    text-align: center;
+    padding-top: 10px;
+    background: #ece5cc;
+    flex-basis: 70%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+ .prices-text table {
+   
+    padding-top: 5px;
+    border-collapse: collapse;
+    
+
+} 
