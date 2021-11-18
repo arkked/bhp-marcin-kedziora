@@ -495,10 +495,51 @@ h3 {
     border-radius: 10px;
 }
 
- .prices-text table {
+ /* .prices-text table {
    
     padding-top: 5px;
     border-collapse: collapse;
     
 
-} 
+}  */
+
+/* .prices-description {
+
+    flex-basis: 50%;
+    display: block;
+    float: left;
+    text-align: center;
+    
+    
+
+} */
+
+.prices-table table {
+
+    overflow-x: auto;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+
+.prices-table td {
+
+    /* float: left; */
+    padding: 8px;
+
+}
+
+.prices-table tr:hover{
+
+    background-color: rgb(206, 156, 156);
+    transition: 0.5s;
+}
+
+
+.prices-price {
+
+    flex-basis: 50%;
+    
+
+}
