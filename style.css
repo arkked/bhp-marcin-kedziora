@@ -204,6 +204,8 @@ h1 {
 p {
 
     color: #777;
+
+
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -275,6 +277,7 @@ h3 {
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    
 
 }
 
@@ -282,7 +285,8 @@ h3 {
 
     width: 100%;
     display: block;
-    
+    box-sizing: border-box;
+    border-radius: 10px;
 
 }
 
@@ -302,6 +306,7 @@ h3 {
 .about-text {
 
     background: #ece5cc;
+    color:rgb(0, 0, 0);
     flex-basis: 70%;
     justify-content: space-between;
     margin-bottom: 5%;
@@ -311,6 +316,16 @@ h3 {
     box-sizing: border-box;
     border-radius: 10px;
     
+
+}
+
+.about-text p {
+
+    color:rgb(39, 32, 32);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px;
 
 }
 
