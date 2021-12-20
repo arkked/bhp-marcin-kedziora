@@ -160,11 +160,32 @@ h1 {
 }
 
 p {
+<<<<<<< HEAD
   color: rgb(63, 59, 59);
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
+=======
+
+    color: #777;
+
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.row {
+
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+
+>>>>>>> 0c682cff7c907a1992d0607ae60bfd3fefb0056e
 }
 
 .services-col {
@@ -242,6 +263,7 @@ p {
 }
 
 .about-col {
+<<<<<<< HEAD
   flex-basis: 32%;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -253,6 +275,25 @@ p {
 .about-col img {
   width: 100%;
   display: block;
+=======
+
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+.about-col img {
+
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+>>>>>>> 0c682cff7c907a1992d0607ae60bfd3fefb0056e
 }
 
 .layer {
@@ -277,6 +318,7 @@ p {
   border-radius: 10px;
 }
 
+<<<<<<< HEAD
 .about-text-p {
   padding-top: 10%;
 }
@@ -286,6 +328,32 @@ p {
   color: rgb(43, 40, 40);
   font-weight: 500;
 }
+=======
+    background: #ece5cc;
+    color:rgb(0, 0, 0);
+    flex-basis: 70%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+
+}
+
+.about-text p {
+
+    color:rgb(39, 32, 32);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px;
+
+}
+
+>>>>>>> 0c682cff7c907a1992d0607ae60bfd3fefb0056e
 
 /*-------call to action -----------*/
 
