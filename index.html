@@ -12,11 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
   
-<section class="header">
+<section class="header" data-aos="fade-in" data-aos-delay="500">
     <nav>
 
         <a href="index.html"><img src="images/logo4.svg"> </a>
@@ -24,11 +25,11 @@
             <i class="fa fa-times" onclick="hideMenu()"></i>
 
             <ul>
-                <li><a href="index.html">START</a></li>
-                <li><a href="#about-id">O MNIE</a></li>
-                <li><a href="#services-id">USŁUGI</a></li>
-                <li><a href="prices.html">CENNIK</a></li>
-                <li><a href="contact.html">KONTAKT</a></li>
+                <li data-aos="fade-left" data-aos-delay="600"><a href="index.html">START</a></li>
+                <li data-aos="fade-left" data-aos-delay="700"><a href="#about-id">O MNIE</a></li>
+                <li data-aos="fade-left" data-aos-delay="800"><a href="#services-id">USŁUGI</a></li>
+                <li data-aos="fade-left" data-aos-delay="900"><a href="prices.html">CENNIK</a></li>
+                <li data-aos="fade-left" data-aos-delay="1000"><a href="contact.html">KONTAKT</a></li>
             </ul>
             
         </div>
@@ -37,90 +38,111 @@
 
 <div class="text-box">
 
-    <h1>Firma Handlowo Usługowa BHPPOŻ</h1>
-    <p>Marcin Kędziora</p>
-    <a href="#services-id" class="hero-btn">Sprawdź</a>
+    <h1 data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1500">Firma Handlowo Usługowa BHPPOŻ</h1>
+    <p data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500">Marcin Kędziora</p>
+    <a href="#services-id" class="hero-btn" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1500">Sprawdź</a>
+
 
 </div>
 
 </section>
 
 <section class="services" id="services-id">
+    
+    <div data-aos="fade-down" data-aos-delay="500">  
+        <h1>Usługi</h1>
+      <p>Kilka z wielu usług, które chciałbym Państwu zaoferować</p>
+  </div>
 
-    <h1>Usługi</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
+    <div class="row" data-aos="fade-right" data-aos-delay="600">
 
-    <div class="row">
-
-        <div class="services-col">
+        <div class="services-col" data-aos="fade-right" data-aos-delay="600">
+            <div class="services-col-inner">
+                
+                <div class="services-col-front"> <h3> Szkolenia z zakresu pierwszej pomocy w standarcie (IFACC)</h3> </div>
+                
+                <div class="services-col-back">  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
             
-            <h3>Usługa 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 
+            </div>
         </div>
 
-        <div class="services-col">
+        <div class="services-col" data-aos="fade-up" data-aos-delay="700">
             
-            <h3>Usługa 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <div class="services-col-inner">
+                
+                <div class="services-col-front"> <h3>Szkolenia BHP: okresowe dla kadry kierowniczej i pracodawców</h3> </div>
+                
+                <div class="services-col-back">  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            
 
+            </div>
         </div>
 
-        <div class="services-col">
+        <div class="services-col" data-aos="fade-left" data-aos-delay="800">
+         
+            <div class="services-col-inner">
+                
+                <div class="services-col-front"> <h3>Sporządzanie instrukcji bezpieczeństwa pożarowego </h3> </div>
+                
+                <div class="services-col-back">  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
             
-            <h3>Usługa 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 
+            </div>
+         
         </div>
 
         
     </div>
-    <a href="prices.html" class="form-btn">Zobacz ceny</a>
+    <a href="prices.html" class="form-btn" data-aos="zoom-in" data-aos-delay="400">Zobacz ceny</a>
 </section>
 
 
 <section class="about" id="about-id">
 
-    <h1>O mnie</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <h1 data-aos="zoom-in" data-aos-delay="400">O mnie</h1>
+    <p data-aos="zoom-in" data-aos-delay="500">Kilka słów o mnie i moim doświadczeniu</p>
 
 
     <div class="row">
 
-        <div class="about-col">
-            <img src="images/Marcin_Kedziora2.jpg">
+        <div class="about-col" data-aos="fade-down-right" data-aos-delay="400">
+            <img src="images/MarcinKedziora.jpeg">
            
         </div>
 
-        <div class="about-text">
-            
-            <h3>O mnie</h3>
+        <div class="about-text" data-aos="fade-down-left" data-aos-delay="500" data-aos-duration="800">
+            <div class="about-text-p">
+                <p>             
+                    Jestem Specjalistą ds. BHP i Ppoż. z ponad 12 letnim stażem. Ukończyłem studia podyplomowe na kierunku Zarządzanie Bezpieczeństwem i Ochroną Pracy 
+                    w Wyższej Szkole Zarządzania i Ochrony Pracy Katowicach oraz kurs Inspektora Ochrony Pożarowej w Centralnej Szkole Państwowej Straży Pożarnej 
+                    w Częstochowie. 
 
-            <p>             
-                Jestem Specjalistą ds. BHP i Ppoż. z ponad 12 letnim stażem. Ukończyłem studia podyplomowe na kierunku Zarządzanie Bezpieczeństwem i Ochroną Pracy 
-                w Wyższej Szkole Zarządzania i Ochrony Pracy Katowicach oraz kurs Inspektora Ochrony Pożarowej w Centralnej Szkole Państwowej Straży Pożarnej 
-                w Częstochowie. 
+                </p>
 
-          </p>
-
-            <p>Jestem również Ratownikiem wpisanym w system Państwowego Ratownictwa Medycznego.
-                Pragnę Państwu zaproponować kompleksową obsługę z zakresu Bezpieczeństwa i Higieny Pracy oraz Ochrony Pożarowej. 
-                Jako Specjalista ds. BHP i Ppoż. oferuję szkolenia wstępne i okresowe, prowadzenie kompleksowej dokumentacji dotyczącej BHP i Ppoż.,
-                udział w postępowaniu wypadkowym, kontakt z instytucjami zewnętrznymi takimi jak PIP, PIS, PSP, opracowanie lub uaktualnienie Oceny Ryzyka Zawodowego dla pracowników zatrudnionych na różnych stanowiskach pracy. 
-                
-           </p>
-
-           <!-- <p>Warto wspomnieć, że zaufały mi takie firmy jak: Bank Spółdzielczy w Koszęcinie, Zakład Produkcyjno – Handlowy Jonczyk Sp. Jawna, Dom Opieki Arka w Koszęcinie, Dom Opieki Idylla w Koszęcinie i firma INTER COLOR z Piekar Śląskich. 
-            Pragnę podkreślić, że moją dewizą jest sumienność oraz profesjonalizm.
-            </p> -->
-
+                <p>
+                    Jestem również Ratownikiem wpisanym w system Państwowego Ratownictwa Medycznego.
+                    Pragnę Państwu zaproponować kompleksową obsługę z zakresu Bezpieczeństwa i Higieny Pracy oraz Ochrony Pożarowej. 
+                </p>
+                <p>
+                    Jako Specjalista ds. BHP i Ppoż. oferuję szkolenia wstępne i okresowe, prowadzenie kompleksowej dokumentacji dotyczącej BHP i Ppoż.,
+                    udział w postępowaniu wypadkowym, kontakt z instytucjami zewnętrznymi takimi jak PIP, PIS, PSP, opracowanie lub uaktualnienie Oceny Ryzyka Zawodowego dla pracowników zatrudnionych na różnych stanowiskach pracy. 
+                    
+            </p>
+            </div>
         </div>
 
     </div>
@@ -152,23 +174,13 @@
 
 </section>
 
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-
-var navLinks = document.getElementById("navLinks");
-
-function showMenu(){
-
-    navLinks.style.right = "0";
-
-}
-
-function hideMenu(){
-
-    navLinks.style.right = "-200px";
-
-}
-
+  AOS.init();
 </script>
 
+
+<script src="main.js"></script>
 </body>
 </html>
