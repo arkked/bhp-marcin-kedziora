@@ -138,17 +138,18 @@ nav .fa {
   }
 }
 
-/*---- services ----*/
-
 .row {
+  height: 100%;
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
 }
 
+/*---- services ----*/
+
 .services {
   width: 80%;
-  height: 60vh;
+  height: 100%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -160,97 +161,82 @@ h1 {
 }
 
 p {
-<<<<<<< HEAD
   color: rgb(63, 59, 59);
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
-=======
-
-    color: #777;
-
-
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-
 }
 
-.row {
-
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-
-
->>>>>>> 0c682cff7c907a1992d0607ae60bfd3fefb0056e
+.cards {
+  display: grid;
 }
 
-.services-col {
-  flex-basis: 31%;
-  background-color: transparent;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  transition: 0.5s;
+.card {
+  perspective: 40rem;
 }
 
-.services-col-inner {
-  position: relative;
-  width: 100%;
-  /* height: 100%; */
-  text-align: center;
-  transition: transform 0.8s;
+.card-body {
+  display: flex;
   transform-style: preserve-3d;
-  border-radius: 10px;
+  transition: transform 0.8s;
 }
 
-.services-col:hover .services-col-inner {
+.card:hover .card-body {
   transform: rotateY(180deg);
 }
 
-.services-col-front,
-.services-col-back {
-  position: absolute;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  background: #fff3f3;
+.cards {
+  grid-gap: 1.5rem;
+  grid-auto-rows: 1fr;
+  padding: 3rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
-.services-col-front h3 {
+.card {
+  display: flex;
+  box-sizing: border-box;
+  transition: z-index, transform calc(var(--time) / 4);
+  transition-delay: var(--time), 0s;
+  text-decoration: none;
+  color: inherit;
+  z-index: 0;
+}
+.card:hover {
+  transition-delay: 0s;
+  z-index: 1;
+}
+
+.card:active {
+  transform: scale(0.975);
+}
+
+.card-body {
+  border-radius: 0.25rem;
+  flex: 1;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff3f3;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.card-front {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
 }
 
-.services-col-back {
-  transform: rotateY(180deg);
-}
-
-.services-col-back p {
-  /* padding-top: 20%; */
-  text-justify: auto;
-  font-size: 20px;
-}
-
-@media (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-
-  .services-col {
-    padding: 10px 12px;
-    height: 40vh;
-  }
-  /* .services-col-front h3 {
-    padding-top: 0%;
-    text-justify: auto;
-    font-size: 20px;
-  } */
+.card-back {
+  transform: rotateY(180deg) translate(100%, 0);
 }
 
 /*---- about ----*/
@@ -263,7 +249,6 @@ p {
 }
 
 .about-col {
-<<<<<<< HEAD
   flex-basis: 32%;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -275,25 +260,6 @@ p {
 .about-col img {
   width: 100%;
   display: block;
-=======
-
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    
-
-}
-
-.about-col img {
-
-    width: 100%;
-    display: block;
-    box-sizing: border-box;
-    border-radius: 10px;
-
->>>>>>> 0c682cff7c907a1992d0607ae60bfd3fefb0056e
 }
 
 .layer {
@@ -318,42 +284,14 @@ p {
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
 .about-text-p {
   padding-top: 10%;
 }
 
 .about-text p {
-  /* margin-top: 10%; */
   color: rgb(43, 40, 40);
   font-weight: 500;
 }
-=======
-    background: #ece5cc;
-    color:rgb(0, 0, 0);
-    flex-basis: 70%;
-    justify-content: space-between;
-    margin-bottom: 5%;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    
-
-}
-
-.about-text p {
-
-    color:rgb(39, 32, 32);
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 20px;
-
-}
-
->>>>>>> 0c682cff7c907a1992d0607ae60bfd3fefb0056e
 
 /*-------call to action -----------*/
 
@@ -498,25 +436,6 @@ p {
   border-radius: 10px;
 }
 
-/* .prices-text table {
-   
-    padding-top: 5px;
-    border-collapse: collapse;
-    
-
-}  */
-
-/* .prices-description {
-
-    flex-basis: 50%;
-    display: block;
-    float: left;
-    text-align: center;
-    
-    
-
-} */
-
 .prices-table table {
   overflow-x: auto;
   width: 100%;
@@ -524,7 +443,6 @@ p {
 }
 
 .prices-table td {
-  /* float: left; */
   padding: 8px;
 }
 
