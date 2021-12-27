@@ -5,16 +5,16 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 
-$email_from = "markked1122@gmail.com";
+$email_from = "kontakt@bhp-marcinkedziora.pl";
 
-$email_subject = 'New form';
-$email_body = "User Name: $name.\n".
-                "User Email: $visitor_email.\n".
-                "Subject: $message.\n";
+$email_subject = 'Nowa wiadomość';
+$email_body = "Wiadomość od: $name.\n".
+            "E-mail użytkownika: $visitor_email.\n\n".
+                "$message.\n";
 
 
 
-$to = "arek.kedziora7@gmail.com";
+$to = "marcin.kedziora@onet.eu";
 
 $headers = "From: $email_from \r\n";
 
@@ -22,6 +22,6 @@ $headers .= "Reply-To: $visitor_email \r\n";
 
 mail($to, $email_subject, $email_body, $headers);
 
-header("Location: contact.html");
+header("Location: thankyou.html");
 
 ?>

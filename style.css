@@ -179,10 +179,28 @@ p {
 
 .cards {
   display: grid;
+  max-width: 100%;
+  grid-gap: 3rem;
+  grid-auto-rows: 1fr;
+  padding: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+@media (max-width: 465px) {
+  .cards {
+    padding: 0;
+  }
 }
 
 .card {
   perspective: 40rem;
+  display: flex;
+  box-sizing: border-box;
+  transition: z-index, transform calc(var(--time) / 4);
+  transition-delay: var(--time), 0s;
+  text-decoration: none;
+  color: inherit;
+  z-index: 0;
 }
 
 .card-body {
@@ -196,22 +214,6 @@ p {
   transform: rotateY(180deg);
 }
 
-.cards {
-  grid-gap: 3rem;
-  grid-auto-rows: 1fr;
-  padding: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-}
-
-.card {
-  display: flex;
-  box-sizing: border-box;
-  transition: z-index, transform calc(var(--time) / 4);
-  transition-delay: var(--time), 0s;
-  text-decoration: none;
-  color: inherit;
-  z-index: 0;
-}
 .card:hover {
   transition-delay: 0s;
   /* z-index: 1; */
