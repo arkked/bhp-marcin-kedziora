@@ -5,6 +5,15 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -15,7 +24,7 @@
     url(images/background.jpeg);
   background-position: center;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
 }
 
 nav {
@@ -148,7 +157,7 @@ nav .fa {
 /*---- services ----*/
 
 .services {
-  width: 80%;
+  width: 90%;
   height: 100%;
   margin: auto;
   text-align: center;
@@ -170,31 +179,21 @@ p {
 
 .cards {
   display: grid;
+  max-width: 100%;
+  grid-gap: 3rem;
+  grid-auto-rows: 1fr;
+  padding: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+@media (max-width: 465px) {
+  .cards {
+    padding: 0;
+  }
 }
 
 .card {
   perspective: 40rem;
-}
-
-.card-body {
-  display: flex;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
-}
-
-.card:hover .card-body {
-  transform: rotateY(180deg);
-}
-
-.cards {
-  grid-gap: 1.5rem;
-  grid-auto-rows: 1fr;
-  padding: 3rem;
-
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-}
-
-.card {
   display: flex;
   box-sizing: border-box;
   transition: z-index, transform calc(var(--time) / 4);
@@ -203,9 +202,21 @@ p {
   color: inherit;
   z-index: 0;
 }
+
+.card-body {
+  display: flex;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  width: 100%;
+}
+
+.card:hover .card-body {
+  transform: rotateY(180deg);
+}
+
 .card:hover {
   transition-delay: 0s;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .card:active {
@@ -213,7 +224,7 @@ p {
 }
 
 .card-body {
-  border-radius: 0.25rem;
+  border-radius: 10px;
   flex: 1;
 }
 
@@ -236,7 +247,7 @@ p {
 }
 
 .card-back {
-  transform: rotateY(180deg) translate(100%, 0);
+  transform: rotateY(180deg) translate(100%, 0%);
 }
 
 /*---- about ----*/
@@ -319,9 +330,7 @@ p {
   }
 
   .row {
-
     flex-direction: column;
-
   }
 }
 
